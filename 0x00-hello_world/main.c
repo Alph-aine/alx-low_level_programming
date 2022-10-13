@@ -6,7 +6,7 @@
      * Return: Always 0 (Success)
       */
 int main(void)
-{
-	printf("Holberton School")
+{/*Just testing*/
+	printf("Holberton School");
 	return (0);
 }
