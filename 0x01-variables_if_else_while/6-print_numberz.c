@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  * main - Entry point
- * Description : prints numners form 0=9
- * Return: Always 0 (Success)
+ * Description : printsnumbers with putchar
+ *  Return: Always 0 (Success)
  */
 int main(void)
 {	/* body of code*/
@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		printf("%d", i);
+		putchar(i % 10 + '0');
 	}
 	putchar('\n');
 	return (0);

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * main - Entry point
- * Description : prints aphabets in lowercase, uses putcha
+ * Description : prints aphabets in lowercase and upper, uses putchar
  * Return: Always 0 (Success)
  */
 int main(void)
