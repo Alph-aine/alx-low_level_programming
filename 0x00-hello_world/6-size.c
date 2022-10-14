@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 
 /**
    * main - Entry point
@@ -10,5 +10,6 @@ int main(void)
 	sizeof(char);
 	sizeof(int);
 	sizeof(long int);
+	sizeof(long long int);
 	sizeof(float);
 }
