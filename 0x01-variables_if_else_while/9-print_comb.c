@@ -2,7 +2,8 @@
 #include <stdlib.h>
 /**
  * main - Entry point
- * Description : prints aphabets in lowercase and upper, uses putchar
+ * Description : prints  all possible combinations of single-digit numbers, with
+ * some conditions though.
  * Return: Always 0 (Success)
  */
 int main(void)

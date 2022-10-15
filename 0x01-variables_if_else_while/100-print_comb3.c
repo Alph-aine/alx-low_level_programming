@@ -2,7 +2,8 @@
 #include <stdlib.h>
 /**
  * main - Entry point
- * Description : prints aphabets in lowercase and upper, uses putchar
+ * Desiription : prints all possible different combinations of two digits, with
+ * conditions.
  * Return: Always 0 (Success)
  */
 int main(void)

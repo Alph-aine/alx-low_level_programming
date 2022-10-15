@@ -2,7 +2,8 @@
 #include <stdlib.h>
 /**
  * main - Entry point
- * Description : prints aphabets in lowercase and upper, uses putchar
+ * Description : printsall possible different combinations of three digits. with
+ * conditions.
  * Return: Always 0 (Success)
  */
 int main(void)
