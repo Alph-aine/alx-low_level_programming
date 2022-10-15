@@ -9,6 +9,7 @@ int main(void)
 {	/* body of code*/
 	int n;
 
+	n = '0';
 	while (n <= '9')
 	{
 		putchar(n);
