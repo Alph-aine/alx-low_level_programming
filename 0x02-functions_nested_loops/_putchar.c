@@ -8,11 +8,11 @@
   * contains the function body of _putchar
   * Return : Always 0 (Sucess)
   */
-void _putchar(char input)  /* function definition*/
+void _putchar(char c)  /* function definition*/
 { /** This is the body of the function.
    * the prototype has been defined in main.h
    * 'char' : It's the argumnet's data type
    */
-	printf(char input);
+	printf(char c);
 	return (0);
 }
