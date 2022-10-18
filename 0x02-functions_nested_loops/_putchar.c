@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
   * function _putchar - A substitute for printf written by me
@@ -8,7 +9,7 @@
   * contains the function body of _putchar
   * Return : Always 0 (Sucess)
   */
-void _putchar(char c)  /* function definition*/
+int _putchar(char c)  /* function definition*/
 { /** This is the body of the function.
    * the prototype has been defined in main.h
    * 'char' : It's the argumnet's data type

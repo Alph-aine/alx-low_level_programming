@@ -1,13 +1,13 @@
 #include "main.h"
 /**
-  * main - Entry point of the program
+  * print_alphabet - Entry point of the program
   *
   * Description: print a-z in lowercase based on the header file provided
   * Return: Aways 0 (succcess)
   */
-int main(void)
+void  print_alphabet(void)
 {
-	int i;
+	char i;
 
 	for (i == 'a'; i <= 'z'; i++)
 	{
