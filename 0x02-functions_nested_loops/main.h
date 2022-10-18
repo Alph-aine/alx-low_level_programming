@@ -5,4 +5,4 @@
  * Description: A prototype for putchar function
  * Return: Always 0 (Success)
  */
-void _putchar('char *');
+void _putchar(char '...');
