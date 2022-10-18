@@ -8,8 +8,9 @@
  */
 int _abs(int i)
 {
-	i = '+' * 'i';
-	_putchar(i);
-	return (0);
+	if (i >= 0)
+		return (i);
+	else
+		return (i * -1);
 }
 
