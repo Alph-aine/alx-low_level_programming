@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
   * main - entry point of the program
   *  Description : print th given value with a new line
@@ -7,7 +6,7 @@
   */
 int main(void)
 {
-	printf("_putchar\n");
+	_putchar("_putchar\n");
 	return (0);
 }
 
