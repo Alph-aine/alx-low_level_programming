@@ -8,7 +8,7 @@
  */
 int _abs(int i)
 {
-	i = +*i
+	i = '+' * i
 	_putchar(i);
 	return (0);
 }
