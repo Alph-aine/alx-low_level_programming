@@ -22,11 +22,6 @@ int main(void)
 					putchar(' ');
 					putchar(k);
 					putchar(l);
-					while (i == '9')
-					{
-					if (j == '9')
-					break;
-					}
 					if (!((i == '9' && j == '8') && (k ==
 									'9' && l
 									== '9')))
