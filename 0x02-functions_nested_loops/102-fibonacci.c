@@ -7,6 +7,7 @@
 int main(void)
 {
 	int i, a, b, c;
+	int n;
 
 	n = 50;
 	a = b = 1;
