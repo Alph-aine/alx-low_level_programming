@@ -8,12 +8,9 @@ int main(void)
 {
 	int i, a, b, c;
 
-	a = b = 1;
-	printf("%d", a);
-	printf(",");
-	printf(" ");
-
-	for (i = 1; i <= 49; i++)
+	a = 0;
+	b = 1;
+	for (i = 1; i <= 50; i++)
 	{
 		c = a + b;
 		printf("%d", c);
