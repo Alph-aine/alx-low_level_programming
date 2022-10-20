@@ -13,7 +13,7 @@ int main(void)
 	printf(",");
 	printf(" ");
 
-	for (i = 2; i <= 50; i++)
+	for (i = 1; i <= 49; i++)
 	{
 		c = a + b;
 		printf("%d", c);
@@ -25,6 +25,5 @@ int main(void)
 		a = b;
 		b = c;
 	}
-	printf("\n");
 	return (0);
 }
