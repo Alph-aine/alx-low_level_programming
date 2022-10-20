@@ -10,8 +10,8 @@ int main(void)
 
 	a = b = 1;
 	printf("%d %s %s  %d", a, ",", " ", b);
-	printf(" ");
 	printf(",");
+	printf(" ");
 
 	for (i = 3; i <= 50; i++)
 	{
@@ -19,8 +19,8 @@ int main(void)
 		printf("%d", c);
 		if (i != 50)
 		{
-			printf(" ");
 			printf(",");
+			printf(" ");
 		}
 		a = b;
 		b = c;
