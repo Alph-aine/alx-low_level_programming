@@ -7,13 +7,11 @@
 int main(void)
 {
 	int i, a, b, c;
-	int n;
 
-	n = 50;
 	a = b = 1;
 	printf("%d %s %s  %d", a, ",", " ", b);
-	printf(",");
 	printf(" ");
+	printf(",");
 
 	for (i = 3; i <= 50; i++)
 	{
@@ -21,8 +19,8 @@ int main(void)
 		printf("%d", c);
 		if (i != 50)
 		{
-			printf(",");
 			printf(" ");
+			printf(",");
 		}
 		a = b;
 		b = c;
