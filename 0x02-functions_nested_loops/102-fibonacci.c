@@ -7,21 +7,25 @@
 int main(void)
 {
 	int n, i, a, b, c;
-	char space = ", ";
 
 	n = 50;
 	a = b = 1;
-	printf("%d %c %d", a, space, b);
-	printf("%c", space)
+	printf("%d %s %s  %d", a, ",", " ", b);
+	printf(",");
+	printf(" ");
 
-	for (i = 3; i <= 50; 1++)
+	for (i = 3; i <= 50; i++)
 	{
 		c = a + b;
 		printf("%d", c);
 		if (i != 50)
-			printf("%c", space);
+		{
+			printf(",");
+			printf(" ");
+		}
 		a = b;
 		b = c;
 	}
+	printf("\n");
 	return (0);
 }
