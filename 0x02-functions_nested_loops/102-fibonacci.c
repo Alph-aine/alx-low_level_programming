@@ -9,7 +9,7 @@ int main(void)
 	int i, a, b, c;
 
 	a = b = 1;
-	printf("%d %s %s ", a);
+	printf("%d", a);
 	printf(",");
 	printf(" ");
 
