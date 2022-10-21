@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
 * print_diagonal- prints a diagonals
 *@n: the number of times a \  will be printed
@@ -6,27 +6,29 @@
  *Description:
  * Return: none
  */
-void print_diagonal(int n)
+int main(int n)
 {
 	int i, j;
 
+	n = 10;
 	if (n <= 0)
-		_putchar('\n');
+		putchar('\n');
 	for (i = 1; i <= n; i++)
 	{
 		for (j = 1; j <= i; j++)
 		{
 			if (i == j)
 			{
-				_putchar('\\');
+				putchar('\\');
+				putchar('\n');
 			}
-			else if (j < i)
+			else
 			{
-				_putchar(' ');
+				putchar(' ');
 			}
 		}
-		_putchar('\n');
 	}
-	_putchar('\n');
+	putchar('\n');
+	return (0);
 
 }
