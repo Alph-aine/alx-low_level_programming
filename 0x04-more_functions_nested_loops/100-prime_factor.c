@@ -23,12 +23,10 @@ int main(void)
 		{
 			/*printf("%d ", i);*/
 			n = n / i;
-			if (i == sqrt(n))
-				printf("%d", i);
 		}
 	}
 	if (n > 2)
-		/*printf("%ld ", n);*/
+		printf("%ld ", n);
 	printf("\n");
 	return (0);
 }
