@@ -14,19 +14,21 @@ int main(void)
 	n = 612852475143;
 	while (n % 2 == 0)
 	{
-		printf("%d ", 2);
+	/*	printf("%d ", 2);*/
 		n = n / 2;
 	}
 	for (i = 3; i <= sqrt(n); i += 2)
 	{
 		while (n % i == 0)
 		{
-			printf("%d ", i);
+			/*printf("%d ", i);*/
 			n = n / i;
+			if (i == sqrt(n))
+				printf("%d", i);
 		}
 	}
 	if (n > 2)
-		printf("%ld ", n);
+		/*printf("%ld ", n);*/
 	printf("\n");
 	return (0);
 }
