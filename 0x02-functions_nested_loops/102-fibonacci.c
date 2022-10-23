@@ -19,9 +19,9 @@ int main(void)
 			printf(",");
 			printf(" ");
 		}
-                printf("\n");
 		a = b;
 		b = c;
 	}
+        printf("\n");
 	return (0);
 }
