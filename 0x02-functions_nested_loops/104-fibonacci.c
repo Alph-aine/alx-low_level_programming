@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-	int i, a, b, c;
+	long int i, a, b, c;
 
 	a = 0;
 	b = 1;
 	for (i = 1; i <= 98; i++)
 	{
 		c = a + b;
-		printf("%d", c);
+		printf("%ld", c);
 		if (i != 50)
 		{
 			printf(",");
@@ -22,5 +22,6 @@ int main(void)
 		a = b;
 		b = c;
 	}
+        printf("\n");
 	return (0);
 }
