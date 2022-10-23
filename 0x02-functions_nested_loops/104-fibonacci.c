@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	long int i, a, b, c;
+	long long int i, a, b, c;
 
 	a = 0;
 	b = 1;
@@ -22,6 +22,6 @@ int main(void)
 		a = b;
 		b = c;
 	}
-        printf("\n");
+	printf("\n");
 	return (0);
 }
