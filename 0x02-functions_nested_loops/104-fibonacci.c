@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-	long long int i, a, b, c;
+	unsigned long int i, a, b, c;
 
 	a = 0;
 	b = 1;
 	for (i = 1; i <= 98; i++)
 	{
 		c = a + b;
-		printf("%ld", c);
+		printf("%lu", c);
 		if (i != 50)
 		{
 			printf(",");
