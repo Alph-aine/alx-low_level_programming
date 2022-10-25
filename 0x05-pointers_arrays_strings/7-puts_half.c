@@ -30,5 +30,6 @@ void puts_half(char *str)
 		/*{*/
 /*		}*/
 		/*n = (i - 1) / 2; */
+		_putchar('\n');
 
 }
