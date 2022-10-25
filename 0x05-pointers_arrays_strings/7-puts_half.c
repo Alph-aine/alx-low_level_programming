@@ -19,7 +19,7 @@ void puts_half(char *str)
 
 		for (j = 0; j < i; j++)
 		{
-			if (j > len)
+			if (j >= len)
 			{
 				temp = str[j];
 				k++;
