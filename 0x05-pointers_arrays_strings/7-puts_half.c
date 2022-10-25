@@ -22,17 +22,9 @@ void puts_half(char *str)
 		{
 			if (j > len)
 			{
-				temp += str[j];
+				temp = str[j];
 				k++;
-			}
-			if (k % 2 != 0)
-			{
-				for (j = 0; j < n; j++)
-					_putchar(temp);
-			}
-			else
 				_putchar(temp);
-
-		}
+			}
 		_putchar('\n');
 }
