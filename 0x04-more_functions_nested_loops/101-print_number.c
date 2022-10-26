@@ -35,7 +35,7 @@ void print_number(int n)
 	else if (m >= 1000)
 	{
 		_putchar((m / 1000) + '0');
-		_putchar((m / 100) + '0');
+		_putchar((m / 100) % 10) + '0');
 		_putchar(((m / 10) % 10) + '0');
 		_putchar((m % 10) + '0');
 	}
