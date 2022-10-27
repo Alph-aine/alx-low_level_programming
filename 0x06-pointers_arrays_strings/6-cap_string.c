@@ -9,16 +9,28 @@ char *cap_string(char *n)
 {
 	int i;
 
-	while (n[i] != '\0')
+	i = 0;
+	if (n[0] >= 'a' && n[0] <= 'z')
+		n[0] = n[0] - 32;
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		if (n[i] != ',' || n[i] != ';' || n[i] != '.' || n[i] != '!' ||
-				n[i] != '?' || n[i] != '"' || n[i] != '(' ||
-				n[i] != ')' || n[i] != '{' || n[i] != '}')
+		switch (n[i])
 		{
-			if (n[i] >= 'a' && n[i] <= 'z')
-				n[i] = n[i] - 32;
+			case ',':
+			case ';':
+			case '.':
+			case '!':
+			case '?':
+			case '"':
+			case '(':
+			case ')':
+			case '{':
+			case '}':
+				if (n[i + 1] > 96 && n[i + 1] < 123)
+				{
+					n[i + 1] = n[i + 1] - 32;
+				}
 		}
-		i++;
 	}
 	return (n);
 }
