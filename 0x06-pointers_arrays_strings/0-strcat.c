@@ -8,7 +8,7 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i, j, len;
+	int i, len;
 
 	i = 0;
 	len = 0;
@@ -18,12 +18,10 @@ char *_strcat(char *dest, char *src)
 	}
 	while (src[i] != '\0')
 	{
+		dest += src[i];
 		i++;
 	}
-	for (j = 0; j < i; j++)
-	{
-		dest += src[j];
-	}
 	dest[len] = '\0';
+	_putchar('\n');
 	return (dest);
 }
