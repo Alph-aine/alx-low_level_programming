@@ -7,27 +7,21 @@
  */
 char *leet(char *n)
 {
-	int i;
+	int i, j;
+	char c1[] = "aAeEoOtTlL";
+	char c2[] = "4433007711";
 
 	i = 0;
+	j = 0;
 	while (n[i] != '\0')
 	{
-		for (i >= 'a' || i >= 'A'; i <= 'z' || i <= 'Z'; i++)
+		while (j < 10)
 		{
-			if (i == 'a' || i == 'A')
-				_putchar('4');
-			else if (i == 'e' || i == 'E')
-				_putchar('3');
-			else if (i == 'o' || i == 'O')
-				_putchar('0');
-			else if (i == 't' || i == 'T')
-				_putchar('7');
-			else if (i == 'l' || i == 'L')
-				_putchar('1');
-			else
-				_putchar(i + '0');
+			if (n[i] == c1[j])
+				n[i] = c2[j];
+			j++;
 		}
-		i++
+		i++;
 	}
 	return (n);
 }
