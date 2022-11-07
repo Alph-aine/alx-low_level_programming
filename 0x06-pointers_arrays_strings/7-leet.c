@@ -12,9 +12,9 @@ char *leet(char *n)
 	char c2[] = "4433007711";
 
 	i = 0;
-	j = 0;
 	while (n[i] != '\0')
 	{
+		j = 0;
 		while (j < 10)
 		{
 			if (n[i] == c1[j])
