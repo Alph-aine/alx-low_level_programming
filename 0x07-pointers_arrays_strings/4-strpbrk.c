@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *_strpbrk- cheecks for the first match betwee
  *two strings
