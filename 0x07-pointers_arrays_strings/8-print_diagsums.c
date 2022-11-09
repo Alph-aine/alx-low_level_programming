@@ -20,7 +20,7 @@ void print_diagsums(int *a, int size)
 	for (row = 1; row <= size; row++)
 	{
 		i = (row * size) - row;
-		diagonal_sum += a[i];
+		diagonal_sum2 += a[i];
 	}
 	printf("%d, %d\n", diagonal_sum, diagonal_sum2);
 }
