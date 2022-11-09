@@ -10,11 +10,17 @@ void print_diagsums(int *a, int size)
 {
 	int row, i;
 	int diagonal_sum = 0;
+	int diagonal_sum2 = 0;
 
 	for (row = 0; row < size; row++)
 	{
 		i = (row * size) + row;
 		diagonal_sum += a[i];
 	}
-	printf("%d\n", diagonal_sum);
+	for (row = 1; row <= size; row++)
+	{
+		i = (row * size) - row;
+		diagonal_sum += a[i];
+	}
+	printf("%d, %d\n", diagonal_sum, diagonal_sum2);
 }
