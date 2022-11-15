@@ -7,7 +7,7 @@
  *Return: 0 or 1
  */
 
-int main(int argc, __attribute__ ((unused)) char *argv[])
+int main(int argc, __attribute__ ((unused)) int *argv[])
 {
 	int i = 1;
 	int sum = 0;
