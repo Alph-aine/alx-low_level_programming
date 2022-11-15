@@ -7,12 +7,16 @@
  *Return: 0 or 1
  */
 
-int main(int argc, __attribute__ ((unused)) int *argv[])
+int main(int argc, __attribute__ ((unused)) char *argv[])
 {
 	int i = 1;
+	int sum = 0;
 
-	if (argc >= 2)
-		printf("%d\n", argv[i] * argv[i + 1]);
+	for (; i <= argc; i++)
+		sum += argv[i];
+
+	if (argc > 2)
+		printf("%d\n", sum);
 	else
 	{
 		printf("Error\n");
