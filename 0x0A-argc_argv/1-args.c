@@ -1,5 +1,4 @@
 #include <stdio.h>
-#define UNUSED(x) (void)(x)
 /**
  *main- entry point into the  program
  *@argc: the number of arguments passed while executing the program
@@ -7,7 +6,7 @@
  *Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc, __attribute__((unused)) char *argv[])
 {
 	printf("%d\n", argc);
 	return (0);
