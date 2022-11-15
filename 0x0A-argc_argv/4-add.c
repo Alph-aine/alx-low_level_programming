@@ -13,25 +13,33 @@ int main(int argc, __attribute__ ((unused)) char *argv[])
 {
 	int i = 1;
 	int sum = 0;
+	int j = 0;
 
 	if (argc == 1)
 	{
 		printf("0\n");
 		return (0);
 	}
-	if (isalpha(argv) == 1)
+	while (j < argc)
 	{
-		printf("Error\n");
-		return (1);
-	}
-	if (argc >= 3)
-	{
-		for (; i < argc; i++)
+		if (isdigit(argv[j]))
 		{
-			sum += atoi(argv[i]);
+			if (argc >= 3)
+			{
+				for (; i < argc; i++)
+				{
+					sum += atoi(argv[i]);
+				}
+			}
 		}
-		printf("%d\n", sum);
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		j++;
 	}
+	printf("%d\n", sum);
 	return (0);
 
 }
