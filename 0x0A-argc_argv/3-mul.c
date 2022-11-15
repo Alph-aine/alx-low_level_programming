@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 /**
  *main- entry point of the program
@@ -10,18 +11,13 @@
 int main(int argc, __attribute__ ((unused)) char *argv[])
 {
 	int i = 1;
-	int sum = 0;
 
-	for (; i <= argc; i++)
-		sum += *argv[i];
-
-	if (argc > 2)
-		printf("%d\n", sum);
-	else
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	printf("%d", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
 
