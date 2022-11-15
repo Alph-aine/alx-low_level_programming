@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 
 /**
   * function _putchar - A substitute for printf written by me
@@ -14,6 +14,6 @@ int _putchar(char c)  /* function definition*/
    * the prototype has been defined in main.h
    * 'char' : It's the argumnet's data type
    */
-	printf(char c);
+	write(1, &c,1);
 	return (0);
 }
