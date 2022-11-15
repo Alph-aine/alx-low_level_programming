@@ -19,7 +19,7 @@ int main(int argc, __attribute__ ((unused)) char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	if (isalpha(*argv))
+	if (isalpha(argv))
 	{
 		printf("Error\n");
 		return (1);
