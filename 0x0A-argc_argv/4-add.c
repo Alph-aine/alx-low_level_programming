@@ -19,14 +19,14 @@ int main(int argc, __attribute__ ((unused)) char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	if (isalpha(argv))
+	if (isalpha(argv) == 1)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	if (argc >= 3)
 	{
-		for (; i <= argc; i++)
+		for (; i < argc; i++)
 		{
 			sum += atoi(argv[i]);
 		}
