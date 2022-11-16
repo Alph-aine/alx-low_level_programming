@@ -25,7 +25,6 @@ char *str_concat(char *s1, char *s2)
 	i++; /*incremented to include null terminator*/
 	while (*(s2 + j))
 		j++;
-	j++;
 	len = i + j;
 
 	join = malloc(sizeof(char) * len);
