@@ -22,24 +22,24 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 	while (*(s1 + i))
-		i++;
+		i++, len1++;
 	i++; /*incremented to include null terminator*/
 	while (*(s2 + j))
-		j++;
+		j++, len2++;
 	len = len1 + len2;
 
 	join = malloc(sizeof(char) * len);
 	if (join == NULL)
 		return (NULL);
-	k = l = 0;
-	while (k < i)
+	i = 0, j = 0;
+	while (i < len1)
 	{
-		*(join + k) = *(s1 + k);
-		k++;
+		*(join + i) = *(s1 + i);
+		i++;
 	}
-	while (l < j)
+	while (j < len2)
 	{
-		*(join + l) = *(s2 + l);
+		*(join + j) = *(s2 + j);
 		j++;
 	}
 	*(join + len) = '\0';
