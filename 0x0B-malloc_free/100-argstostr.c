@@ -10,7 +10,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	char **argv;
+	char *argv;
 	int i;
 
 	if (ac == 0 || av == NULL)
@@ -22,7 +22,8 @@ char *argstostr(int ac, char **av)
 	while (i < ac)
 	{
 		argv[i] = av[i];
-		_putchar('argv[i]');
+		_putchar(argv[i]);
+		_putchar('\n');
 		i++;
 	}
 	return (argv);
