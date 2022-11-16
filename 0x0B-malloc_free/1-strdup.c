@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	if (arr == NULL)
 		return (NULL);
 
-	while (i < sizeof(str))
+	while (i < (int)sizeof(str))
 	{
 		*(arr + i) = str[i];
 		i++;
