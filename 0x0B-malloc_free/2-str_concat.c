@@ -12,9 +12,9 @@ char *str_concat(char *s1, char *s2)
 {
 	char *join;
 	int i, j, len;
-	 i = 0;
-	 j = len = 0;
 	int k, l;
+	
+	i = j = len = 0;
 
 	if (s1 == NULL)
 		s1 = "";
