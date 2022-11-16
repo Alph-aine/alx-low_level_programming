@@ -11,16 +11,20 @@ char *_strdup(char *str)
 {
 	char *arr;
 	int i = 0;
+	int len = 0;
+
+	while (str != '\0')
+		len++;
 
 	if (str == NULL)
 		return (NULL);
-	arr = malloc(sizeof(char) * sizeof(str));
+	arr = malloc(sizeof(char) * len);
 	if (arr == NULL)
 		return (NULL);
 
-	while (i < (int)sizeof(str))
+	while (i < len)
 	{
-		*(arr + i) = str[i];
+		*(arr + i) = *(str + i);
 		i++;
 	}
 	*(arr + i) = '\0';
