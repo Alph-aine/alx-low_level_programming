@@ -13,7 +13,8 @@ char *str_concat(char *s1, char *s2)
 	char *join;
 	int i, j, len;
 	int k, l;
-	
+	int len1, len2;
+
 	i = j = len = 0;
 
 	if (s1 == NULL)
@@ -25,7 +26,7 @@ char *str_concat(char *s1, char *s2)
 	i++; /*incremented to include null terminator*/
 	while (*(s2 + j))
 		j++;
-	len = i + j;
+	len = len1 + len2;
 
 	join = malloc(sizeof(char) * len);
 	if (join == NULL)
