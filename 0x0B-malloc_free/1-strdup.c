@@ -16,14 +16,15 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	while (*str != '\0')
-		len++;
+	while (*str[i] != '\0')
+		len++, i++;
+
 	len++;/* adds null terminator to length*/
 
 	arr = malloc(sizeof(char) * len);
 	if (arr == NULL)
 		return (NULL);
-
+	i = 0;
 	while (i < len)
 	{
 		*(arr + i) = *(str + i);
