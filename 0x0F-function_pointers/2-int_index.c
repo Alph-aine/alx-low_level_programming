@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-  *int_index-
-  *@array:
-  *@size:
-  *@cmp:
+  *int_index-searches an array for a match using cmp
+  *@array:the array
+  *@size:size of th array
+  *@cmp:the compare function
   *
-  *Return:
+  *Return: i, or -1
   */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -21,6 +21,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		temp = cmp(array[i]);
 		if (temp != 0)
-			return (-1);
+			return (i);
 	}
+	return (-1);
 }
