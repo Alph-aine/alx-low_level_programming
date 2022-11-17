@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdlib.h>
 /**
  *print_name- prints name
  *@name: the string literal to be printed
