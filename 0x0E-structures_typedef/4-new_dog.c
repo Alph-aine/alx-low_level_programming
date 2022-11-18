@@ -2,6 +2,35 @@
 #include "dog.h"
 #include <stdio.h>
 /**
+ *len- count the len of the argument passed
+ *@str: the argument
+ *Return: i
+ */
+int len(char *str)
+{
+	int i;
+
+	for (i = 0; *(str + i); i++)
+		;
+	return (i);
+}
+
+/**
+ *strcpy- copies the content of src to dest
+*@dest: the destination
+*@src: the source
+*Return: dest
+*/
+char *strcpy(char *dest, char *src)
+{
+	int i = 0;
+
+	for (; i <= len(src); i++)
+		*(dest + i) = *(src + i);
+	return (dest);
+}
+
+/**
   *new_dog-creates a new dog struct
   *@name: the name
   *@age: the age
@@ -10,16 +39,41 @@
   */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *copy;
+	dog_t *dog1;
+	char *name_copy;
+	char *owner_copy;
 
-	copy = malloc(sizeof(dog_t));
-	if (copy == NULL)
-	{
-		free(copy);
+	dog1 = malloc(sizeof(dog_t));
+	if (dog1 == NULL)
 		return (NULL);
+
+	if (name != NULL)
+	{
+		name_copy = malloc(sizeof(len(name) + 1));
+		if (name_copy == NULL)
+		{
+			free(dog1);
+			return (NULL);
+		}
+		dog1->name = strcpy(name_copy, name);
 	}
-	copy->name = name;
-	copy->age = age;
-	copy->owner = owner;
-	return (copy);
+	else
+		dog1->name = NULL;
+
+	dog1->age = age;
+
+	if (owner_copy != NULL)
+	{
+		owner_copy = malloc(sizeof(len(owner) + 1));
+		if (owner_copy == NULL)
+		{
+			free(dog1);
+			free(name_copy);
+			return (NULL);
+		}
+		dog1->owner = strcpy(owner_copy, owner)
+	}
+	else
+		dog1->owner = NULL;
+	return (dog1);
 }
