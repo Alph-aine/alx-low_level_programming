@@ -16,12 +16,12 @@ int len(char *str)
 }
 
 /**
- *strcpy- copies the content of src to dest
+ *_strcpy- copies the content of src to dest
 *@dest: the destination
 *@src: the source
 *Return: dest
 */
-char *strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
@@ -55,7 +55,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 			free(dog1);
 			return (NULL);
 		}
-		dog1->name = strcpy(name_copy, name);
+		dog1->name = _strcpy(name_copy, name);
 	}
 	else
 		dog1->name = NULL;
@@ -71,7 +71,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 			free(name_copy);
 			return (NULL);
 		}
-		dog1->owner = strcpy(owner_copy, owner)
+		dog1->owner = _strcpy(owner_copy, owner);
 	}
 	else
 		dog1->owner = NULL;
