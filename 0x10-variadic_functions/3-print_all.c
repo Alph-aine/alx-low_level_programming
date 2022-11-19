@@ -63,7 +63,7 @@ void print_all(const char * const format, ...)
 			       {'f', print_float},
 			       {'\0', NULL} };
 	va_start(args, format);
-	while (format != NULL && format[i] == '\0')
+	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
 		while (choice[j].fs != '\0')
