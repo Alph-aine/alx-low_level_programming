@@ -8,20 +8,18 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	int i = 0;
+	unsigned int i = 0;
+	int x;
+	int sum = 0;
+	va_list args; /*args gives access to the argumnets*/
 
 	if (n == 0)
 		return (0);
-
-	va_list args; /*args gives access to the argumnets*/
 
 	va_start(args, n);
 
 	for (; i < n; i++)
 	{
-		int x;
-		int sum = 0;
-
 		x = va_arg(args, int);
 		sum += x;
 	}
