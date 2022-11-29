@@ -16,5 +16,6 @@ size_t list_len(const list_t *h)
 		count++;
 		h = h->next;
 	}
+	count += 1; /* count 1  for the last pointer */
 	return (count);
 }
