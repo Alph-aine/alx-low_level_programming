@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+
 /**
  *print_list- prints the content of the nodes in a linked list
  *@h: the list

@@ -10,7 +10,7 @@
  *
  * Description: singly linked list node structure
  */
-typedef struct list_s
+typedef struct list_s size_t
 {
 	char *str;
 	unsigned int len;
