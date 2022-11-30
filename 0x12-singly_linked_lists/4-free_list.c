@@ -6,5 +6,6 @@
 
 void free_list(list_t *head)
 {
-	free(head);
+	while (head)
+		free(head);
 }
