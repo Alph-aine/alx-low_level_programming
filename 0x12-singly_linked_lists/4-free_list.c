@@ -8,9 +8,8 @@ void free_list(list_t *head)
 {
 	while (head != NULL)
 	{
-		free(head->next);
-		free(head->str);
-		free(head->len);
+		free(head->str); /*free malloc'ed str */
+		free(head); /* frees malloc'ed head*/
 		head = head->next;
 	}
 }
