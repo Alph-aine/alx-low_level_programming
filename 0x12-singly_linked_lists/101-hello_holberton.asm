@@ -1,4 +1,3 @@
-	.file	"hello.c"
 	.text
 	.section	.rodata
 .LC0:
