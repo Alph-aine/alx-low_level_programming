@@ -3,24 +3,22 @@
  *get_nodeint_at_index- accesses a node at index n
  *@head: the linked list
  *@index: the index of the node to find
- *Return: null or the address of the data at the node
+ *Return: null or the address of the nth node
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int count;
-	listint_t *temp;
 
 	count = 0;
 	if (head == NULL)
 		return (NULL);
-	temp = head;
-	while (temp != NULL)
+	while ((count < index) && temp != NULL)
 	{
 		if (count == index)
-			return (temp->n);
+			return (head);
 		count++;
-		temp = temp->next;
+		head = head->next;
 	}
-	if (index > count)
-		return (NULL);
+	
+	return (NULL);
 }
