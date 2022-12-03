@@ -1,4 +1,4 @@
-#include "lists.h"
+#include "main.h"
 /**
  *print_binary- converts decimal to binary
  *@n: the decimal
@@ -14,6 +14,7 @@ void print_binary(unsigned long int n)
 		len++;
 		n_copy >>= 1;
 	}
+
 	while (len >= 0)
 	{
 		if ((n >> len) & 1)
