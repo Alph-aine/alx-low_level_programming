@@ -7,7 +7,8 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int len = 0, bit;
+	unsigned int len = 0;
+	int bit;
 	unsigned long int n_copy = n;
 
 	while (n_copy > 0)
@@ -15,7 +16,7 @@ int get_bit(unsigned long int n, unsigned int index)
 		len++;
 		n_copy >>= 1;
 	}
-	if (index > (unsigned int)len)
+	if (index > len)
 		return (-1);
 	bit = ((n >> index) & 1);
 	return (bit);
