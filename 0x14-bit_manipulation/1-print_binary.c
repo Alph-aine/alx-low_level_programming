@@ -15,6 +15,10 @@ void print_binary(unsigned long int n)
 		n_copy >>= 1;
 	}
 
+	if (n == 0)
+		_putchar('0');
+
+	len -= 1;
 	while (len >= 0)
 	{
 		if ((n >> len) & 1)
