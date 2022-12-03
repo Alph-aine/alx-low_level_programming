@@ -7,7 +7,7 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int max_range; 
+	unsigned int max_range;
 	unsigned long int mask = 1;
 
 
