@@ -7,19 +7,14 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int len = 0;
+	unsigned int max_range;
 	int bit;
-	unsigned long int n_copy = n;
 
-	while (n_copy > 0)
-	{
-		len++;
-		n_copy >>= 1;
-	}
-	len -= 1;
+	max_range = (sizeof(unsigned long int) * 8);
 
-	if (index > len)
+	if (index > max_range)
 		return (-1);
+
 	bit = ((n >> index) & 1);
 	return (bit);
 }
