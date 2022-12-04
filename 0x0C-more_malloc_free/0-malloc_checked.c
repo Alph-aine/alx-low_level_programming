@@ -2,11 +2,14 @@
 /**
  *malloc_checked- allocates memory
  *@b: the variable
- *Return: void
+ *Return: pointer to allocated memory
  */
 void *malloc_checked(unsigned int b)
 {
-	b = malloc(sizeof(unsigned int));
-	if (b == NULL)
+	void *ptr;
+
+	ptr = malloc(sizeof(b));
+	if (ptr == NULL)
 		exit(98);
+	return (ptr);
 }
