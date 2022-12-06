@@ -55,7 +55,7 @@ int  main(int argc, char *argv[])
 		__exit(98, argv[1], 0);
 
 	/* reads from src file and writes in to the dest file */
-	while ((n_read = read(src, buffer, 1024) != 0))
+	while ((n_read = read(src, buffer, 1024)) != 0)
 	{
 		if (n_read == -1)
 			__exit(98, argv[1], 0);
