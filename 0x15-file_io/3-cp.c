@@ -21,7 +21,7 @@ int __exit(int error, char *s, int fd)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", s);
 		exit(error);
 	case 100:
-		dprintf(STDERR_FILENO, "Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(error);
 	default:
 		return (0);
